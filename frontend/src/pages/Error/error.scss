@@ -1,0 +1,58 @@
+.error__Page {
+
+    padding: 100px 0px 100px 0px;
+
+    * {
+        margin: 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 140px;
+    color: #FF6060;
+    
+    
+    .error {
+    font-size: 198px;
+    line-height: 143%;
+    font-weight: 700;   
+    text-align: center; 
+    }
+
+    .error__Text {
+    font-size: 36px;
+    }    
+
+.indexReturnLink {
+    color:black;
+    font-size: 18px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    }
+}
+
+    a, a:hover {
+    color:black;
+    }
+
+@media screen and (max-width: 768px) {
+
+    .error__Page {
+    gap: 80px;
+
+    .error {
+    font-size: 96px;  
+    }
+
+    .error__Text {
+    font-size: 18px;
+    width: 70%;
+    } 
+
+    .indexReturnLink {
+    font-size: 14px;
+    }
+    }
+}
