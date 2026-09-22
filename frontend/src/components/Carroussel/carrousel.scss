@@ -1,0 +1,56 @@
+@use '../../variables' as *;
+
+.carrousel {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+    border: none;
+    border-radius: 25px;
+    @include gradient__blue3;     
+
+    .carrousel__logo { 
+        position: absolute;
+        height: fit-content;
+        top: 25%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+
+    img {
+        height : 150px;
+        width: 75px;       
+    }
+
+     img:hover {
+            @include focus;
+            cursor: pointer;
+            filter: drop-shadow(0 0 2em #646cffaa);
+        }
+}
+
+}
+
+.carrousel__position {
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    margin: 0px;   
+    }
+   
+
+@media screen and (max-width: 768px) {
+        
+.carrousel {
+    width: 100%;
+}
+        .carrousel__logo {
+            img {
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }

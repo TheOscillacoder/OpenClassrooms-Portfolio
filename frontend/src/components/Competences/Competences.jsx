@@ -1,21 +1,29 @@
 import './competences.scss'
 import PropTypes from 'prop-types'
+import compLogos from './compLogos.js'
 
-Tags.propTypes = {
-    logement: PropTypes.object,
-    tags: PropTypes.string,
+Competences.propTypes = {
+    competence: PropTypes.object,
 }
 
-function Tags({ logement }) {
+function Competences({ compTag, compAlt }) {
+
+    const logos = compLogos[compTag]
+
+    if (!logos) {
+        console.log(`Logo manquant pour la compétence : "${compTag}"`)
+    }
 
     return (
-        <ul className='tags'>
-            {logement.tags.map((tag, index) => (
-                <li className='tagItem' key={`${tag}-${index}`}>{tag}</li>
-            ))
+        <article className='compItem'>
+            {/* associe la compétence à son logo ou son texte si pas de logo */}
+            {
+                logos ? <img src={compLogos[compTag]} alt={compAlt}></img>
+                    : <li className="TextCompItem">{compTag}</li>
             }
-        </ul>
+        </article>
+
     )
 }
 
-export default Tags
+export default Competences

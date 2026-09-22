@@ -1,9 +1,12 @@
+@use "../../variables" as *;
+
+
 .header {
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 35px 100px 50px 100px;
+    margin: 50px 0px 50px 0px;
 
     ul {
         margin: 0;
@@ -11,34 +14,38 @@
     }
 }
 
+  .header__pic {
+        width: 150px;
+        height: 150px;
+        border: none;
+        border-radius: 25%;
+    }
+
 .header__nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 55px;
     margin: 0px;
 
     * {
     display: inline-flex;
-    height: 24px;
-    font-size: 24px;
-    color: black;
+    height: 32px;
+    font-size: 32px;
+    color: white;
     list-style: none;
-    filter: drop-shadow(0 0 2em #646cffaa);
-    a {
-        height: 24px;
-    }
-    }
-}
-    .header__pic {     
-     filter: drop-shadow(0 0 2em #646cffaa);
-     height: 50px;
-     width: 50px;
-   }
 
-   .active {
-    text-decoration: underline;
-   }
+    a:hover {
+        color: white;
+        text-decoration: underline;
+       }
+    }
+
+     
+     
+    }    
+    
+  
 
      
    @media screen and (max-width: 768px) {
@@ -48,7 +55,7 @@
         margin: 20px;
     }
 
-    .header__logo {
+    .header__pic {
         width: 145px;
         height: 47px;
     }
@@ -60,7 +67,6 @@
 
         * {
         font-size: 12px;
-        text-transform: uppercase;
         }
     }
 }

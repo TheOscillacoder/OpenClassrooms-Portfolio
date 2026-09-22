@@ -1,0 +1,34 @@
+$blue: #90abff;
+$ultramarine:#00328e;
+$cyan: rgb(154, 228, 255);
+
+
+@mixin focus($color: $blue) {
+        transform: scale(1.15);
+        transition-duration: 0.6s;
+        z-index: 10;
+}
+
+@mixin banner__calque {
+    filter: brightness(100%);
+    background-image: url(http://localhost:5173/src/assets/kalen-emsley_comp.jpg);
+    mix-blend-mode:color-dodge;
+    opacity: 0.1;
+}
+
+@mixin gradient__blue3 {
+        background: linear-gradient($ultramarine,$cyan,$ultramarine);
+}
+@mixin gradient__blue2 {
+        background: -moz-radial-gradient($ultramarine,$cyan);
+}
+
+@mixin section__text {                    
+    padding: 25px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    text-align: justify;
+    font-weight: 600;
+    font-size: 24px;
+}

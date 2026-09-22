@@ -4,7 +4,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './main.scss'
 import App from './App.jsx'
 
-import HomePage from './pages/Home.jsx'
+import HomePage from './pages/Home/Home.jsx'
+import ErrorPage from './pages/Error/Error.jsx'
+import LoginPage from './pages/Login/LoginPage.jsx'
 
 
 const router = createBrowserRouter([
@@ -16,10 +18,17 @@ const router = createBrowserRouter([
         path: "/",
         element: <HomePage />
       },
+      {
+        path: "/adminlogin",
+        element: <LoginPage />
+      },
+      {
+        path: "*",
+        element: <ErrorPage />
+      }
     ]
   }
 ])
-console.log(router)
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />

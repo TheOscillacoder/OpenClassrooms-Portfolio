@@ -1,8 +1,8 @@
+@use '../../variables' as *;
+
 .footer {
-    background-color: black;
-    height: 209px; 
-    width: 100%; 
-    margin: 50px 0px 0px 0px;  
+    @include gradient__blue2;
+    height: 200px; 
 
     display: flex;
     flex-direction: column;
@@ -10,28 +10,33 @@
     justify-content: center;
  
     .footer__logo {
-    width: 50px;
-    height: 50px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 50%;
     }
-    .footer__textContent {        
+
+    .footer__textContent {  
+    display: inline-flex;
+    align-content: center;   
+    gap: 10px;   
     font-weight: 500;
     font-size: 24px; 
-    color: #FFFFFF;
+    
+    * {
+        color: #FFFFFF;
+    }
 }
 }
 
 @media screen and (max-width: 768px) {
-
     .footer {
-
-        margin: 0px;
+        width: 100%;
+    }
 
         .footer__textContent {
-        
-        margin: 10px;
-        width: 133px;
+        width: 90%;
         font-size: 12px;
         }
     }   
 
-}

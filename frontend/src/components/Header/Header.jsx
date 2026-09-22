@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 import ProfilPic from '../../assets/photo_Guillaume_Caro_edited.jpg'
 import './header.scss'
@@ -6,28 +6,28 @@ import './header.scss'
 
 function HeaderMenu() {
     return (
-        <nav className='header'>
+        <nav id='header' className='header'>
             <Link to="/"><img src={ProfilPic} className="header__pic" alt="photo de profil de Guillaume Caro" /></Link>
             <ul className='header__nav'>
                 <li>
-                    <NavLink to="/" className={
-                        ({ isActive }) => isActive ? "active" : ""}>PRESENTATION</NavLink>
+                    <a href="/#presentation" className={
+                        ({ isActive }) => isActive ? "active" : ""}>PRESENTATION</a>
                 </li>
                 <li>
-                    <NavLink to="" className={
-                        ({ isActive }) => isActive ? "active" : ""}>COMPETENCES</NavLink>
+                    <a href="/#competences" className={
+                        ({ isActive }) => isActive ? "active" : ""}>COMPETENCES</a>
                 </li>
                 <li>
-                    <NavLink to="" className={
-                        ({ isActive }) => isActive ? "active" : ""}>PROJETS</NavLink>
+                    <a href="/#projets" className={
+                        ({ isActive }) => isActive ? "active" : ""}>PROJETS</a>
                 </li>
                 <li>
-                    <NavLink to="" className={
-                        ({ isActive }) => isActive ? "active" : ""}>PARCOURS</NavLink>
+                    <a href="/#parcours" className={
+                        ({ isActive }) => isActive ? "active" : ""}>PARCOURS</a>
                 </li>
                 <li>
-                    <NavLink to="" className={
-                        ({ isActive }) => isActive ? "active" : ""}>CONTACT</NavLink>
+                    <a href="/#contact" className={
+                        ({ isActive }) => isActive ? "active" : ""}>CONTACT</a>
                 </li>
             </ul>
 

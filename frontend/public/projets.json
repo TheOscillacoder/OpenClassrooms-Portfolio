@@ -1,0 +1,66 @@
+[
+    {
+        "id": "1",
+        "title": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
+        "description": "Ce projet consiste à intégrer, à partir de maquettes Figma (mobile, tablette, desktop), la page d'accueil d'une agence de voyage en HTML/CSS, en partant d'une base de code existante et avec l'aide d'un assistant IA (Companion) dans VS Code. L'objectif est de maîtriser l'intégration responsive fidèle à une maquette, ainsi que la mise en place d'un environnement de dev front-end versionné avec Git/GitHub.",
+        "tags":
+            [
+                "HTML", "CSS", "Responsive", "Intégration", "Figma", "Frontend"],
+
+        "cover": "/cover/booki_cover.jpg",
+        "url": "https://github.com/TheOscillacoder/Projet-2"
+    },
+    {
+        "id": "2",
+        "title": "Créez une page web dynamique avec JavaScript",
+        "description": "Ce projet consiste à développer la partie front-end du site d'une architecte d'intérieur : une page de présentation des travaux, une page de connexion admin et une modale d'upload de médias, le tout développé from scratch en JavaScript à partir d'un HTML fourni. Il inclut la gestion des événements utilisateurs, la manipulation du DOM et, pour la première fois, la communication avec une API et un code back-end existant.",
+        "tags": [
+            "JavaScript", "DOM", "API", "Gestion d'événements", "Formulaires" ],
+        "cover": "/cover/sophie_bluel_cover.jpg",
+        "url": "https://github.com/TheOscillacoder/Projet-3"
+    },
+    {
+        "id": "3",
+        "title": "Débuggez et optimisez un site de photographe",
+        "description": "En tant que développeur freelance, ce projet consiste à auditer un site existant avec Lighthouse et Wave pour identifier les problèmes de performance, d'accessibilité et de référencement, puis à corriger le code en conséquence via les Chrome DevTools. Le livrable final est un rapport comparatif avant/après illustrant les améliorations apportées et leur impact sur le SEO.",
+        "tags":
+            ["SEO", "Performance Web", "Debugging", "Lighthouse", "Wave", "Optimisation"],
+        "cover": "/cover/nina_carducci_cover.jpg",
+        "url": "https://github.com/TheOscillacoder/Projet-5"
+    },
+    {
+        "id": "4",
+        "title": "Créez une application web de location immobilière avec React",
+        "description": "Ce projet consiste à développer le front-end d'une application React à partir de maquettes fournies et de données JSON simulées, en se concentrant sur la création de composants réutilisables et la navigation entre pages avec React Router. Le projet inclut aussi l'utilisation de Sass pour le CSS et l'implémentation d'animations pour enrichir l'expérience utilisateur.",
+        "tags":
+            ["React", "Vite", "Sass", "Composants", "JSON" ],
+        "cover": "/cover/kasa_app_cover.jpg",
+        "url": "https://github.com/TheOscillacoder/Projet-6"
+    },
+    {
+        "id": "5",
+        "title": "Développez le back-end d'un site de notation de livres",
+        "description": "Ce projet consiste à développer un serveur back-end avec Express et MongoDB, en implémentant les opérations CRUD, un système d'authentification sécurisé et la gestion optimisée des images, le tout structuré selon une architecture MVC avec Mongoose. Une attention particulière est portée à la sécurité des données et aux bonnes pratiques du Green Code.",
+        "tags":
+            ["Node.js", "Express", "MongoDB", "CRUD", "Token", "API RESTful" ],
+        "cover": "/cover/mon_vieux_grimoire_app_cover.jpg",
+        "url": "https://github.com/TheOscillacoder/Projet-7"
+    },
+    {
+        "id": "6",
+        "title": "Planifiez le développement du site de votre client",
+        "description": "Ce projet consiste à préparer la planification technique d'un site web à partir d'une maquette, de spécifications fonctionnelles et de User Stories, sans coder directement. Il s'agit de rédiger les spécifications techniques, découper les fonctionnalités en tâches, mener une veille technologique, organiser le suivi du projet via un outil comme Notion (Kanban), et présenter la solution technique retenue.",
+        "tags":
+            ["Gestion de projet", "Spécifications techniques", "Veille technologique", "Méthode Agile", "Notion"],
+        "cover": "/cover/menu_maker_cover.jpg"
+    },
+    {
+        "id": "7",
+        "title": "Créez et publiez votre portfolio de développeur",
+        "description": "Ce projet de synthèse consiste à concevoir, développer et déployer un site portfolio professionnel, responsive, optimisé et accessible, valorisant au moins deux projets réalisés durant la formation.",
+        "tags":
+            ["Portfolio", "Déploiement", "React", "Frontend", "Backend"],
+        "cover": "/cover/portfolio_cover.jpg",
+        "url": "https://github.com/TheOscillacoder/OpenClassrooms-Portfolio"
+    }
+]

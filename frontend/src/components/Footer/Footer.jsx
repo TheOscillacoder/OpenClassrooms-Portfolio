@@ -1,13 +1,17 @@
-import profilPic from '../../assets/photo_Guillaume_Caro_edited.jpg'
+import { Link } from "react-router-dom"
+
+import ProfilPic from '../../assets/photo_Guillaume_Caro_edited.jpg'
 import './footer.scss'
 
 
 function FooterContent() {
     return (
-        <div className='footer'>
-            <img src={profilPic} className="footer__logo" alt="photo de profil de Guillaume Caro" />
-            <p className='footer__textContent'>© 2026 Guillaume Caro. Tous droits réservés</p>
-        </div>
+        <footer className='footer'>
+            <p className='footer__textContent'><Link to="/adminlogin">©</Link> 2026 Guillaume Caro. Tous droits réservés
+                <a href="/#header"><img src={ProfilPic} className="footer__logo" alt="photo de profil de Guillaume Caro" /></a>
+            </p>
+
+        </footer>
     )
 }
 
