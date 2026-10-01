@@ -1,9 +1,27 @@
 @use "../../variables"  as *;
 
-.banner {    
+
+.banner {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 600px;
+}
+
+.bannerPicDiv {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 100%;
+    grid-area: 1 / 1;
+}
+
+
+.bannerPic {    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     border: solid 1px white;
     border-radius: 200%;
@@ -16,53 +34,61 @@
     
 }
 
-.banner__intro {
-    font-size: 38px;
-    text-align: left;
+.banner__content {
+    position: relative;
+    grid-area: 1 / 1;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
 }
 
 .banner__title {
-    text-shadow: 3px 3px 0px #00000040;
-    font-weight: 900;
-    font-family: Montserrat;
-    color :white;
-    position: relative;
-    font-size: 68px;
-    top: 100px;
-    margin: -30px;
-    z-index: 1;
+   @extend %h1-title;
+}
+
+.banner__intro {
+    display: flex;
+    font-size: 24px;
 }
 
 .banner__intro, .banner__text {
     text-shadow: 2px 2px 0px #00000040;
-    font-weight: 700;
-    font-family: Montserrat;
-    color :white;
-    position: relative;
-    
+    font-weight: 700;    
 }
 
 .banner__text {
-    bottom: 300px;
-    font-weight: 600;
     font-size: 24px;
     text-align: center;
+    padding: 0 30px 0 30px;
     }
 
 @media screen and (max-width: 768px) {
-    
-    .banner {
-        height: 110px;
-        border-radius: 10px;
-        text-align: start;    
+
+.banner__content {
+        align-self: center;
     }
-        .banner__title {
-        text-align: left;
-        width: 67.5%;
-        font-size: 24px;
-        line-height: 100%;
-        bottom: 80px;
-        left: 15px;
+
+.banner__intro {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    }
+    
+    .banner__text {
+    font-size: 18px;
     }
 }
 
+@media screen and (max-width: 375px) {
+    .banner__text {
+    font-size: 14px;
+    padding: 20px;
+    }
+
+    .banner__intro {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    }
+}

@@ -8,11 +8,8 @@ input, textarea {
     color: $ultramarine;
 }
 
-.title {
-    text-shadow: 3px 3px 0px #00000040;
-    font-weight: 900;
-    color :white;
-    font-size: 68px;
+.loginTitle {
+   @extend %h1-title;
 }
 
 
@@ -29,6 +26,8 @@ input, textarea {
 
 
 @media screen and (max-width: 768px) {
-
+.title {
+    font-size: 36px;
+}
 }
 

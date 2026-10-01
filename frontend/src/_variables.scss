@@ -1,12 +1,15 @@
-$blue: #90abff;
+$blue: #98b7ff;
 $ultramarine:#00328e;
 $cyan: rgb(154, 228, 255);
 
 
-@mixin focus($color: $blue) {
+@mixin focus {
+        //désactivé sur appareils sans curseurs ==> mobile
+       @media (hover: hover) and (pointer: fine) {
         transform: scale(1.15);
         transition-duration: 0.6s;
-        z-index: 10;
+        z-index: 1;
+}
 }
 
 @mixin banner__calque {
@@ -23,12 +26,58 @@ $cyan: rgb(154, 228, 255);
         background: -moz-radial-gradient($ultramarine,$cyan);
 }
 
+@mixin blueTag {
+
+    border: none;
+    border-radius: 10px;
+    background-color: $blue;
+
+     @media screen and (max-width: 768px) {
+        padding: 0px 10px 0px 10px; 
+        height: 50px;
+    }
+}
+
 @mixin section__text {                    
     padding: 25px;
     border: none;
     border-radius: 25px;
-    text-align: center;
     text-align: justify;
     font-weight: 600;
     font-size: 24px;
+
+    
+        @media screen and (max-width: 768px) {
+                text-align: center;
+                font-size: 18px;
+    }
+}
+
+%h1-title {
+        text-shadow: 3px 3px 0px #00000040;
+        font-weight: 900;
+        font-size: 68px;
+        z-index: 1;
+        margin: 0;
+        
+        @media screen and (max-width: 768px) {
+        font-size: 40px;
+        font-weight: 800;   
+
+        }
+}
+
+%tagItemLayout {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0;
+
+        @media screen and (max-width: 768px) {
+                display: grid;
+                grid-template-columns: 25% 25% 25%;
+                gap: 30px;
+                
+        }
 }

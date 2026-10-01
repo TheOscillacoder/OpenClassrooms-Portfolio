@@ -29,7 +29,7 @@ function ProjetCard({ projet }) {
       <h3 className='cardTitle'>{projet.title}</h3>
       <ul className='projetTags'>
         {projetTags.map((tag, index) =>
-          <li key={`${tag}-${index}`}>{tag}</li>
+          <li className="tagItem" key={`${tag}-${index}`}>{tag}</li>
         )}
       </ul>
       {projetGitHub ?

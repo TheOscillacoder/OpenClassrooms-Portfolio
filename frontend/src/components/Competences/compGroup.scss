@@ -1,12 +1,16 @@
+@use '../../variables' as *;
 
 .compTitle {
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 800;
 }
 
 .compGroup {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-between;
+
+   @extend %tagItemLayout
 }
+
+ 
+
+    
+

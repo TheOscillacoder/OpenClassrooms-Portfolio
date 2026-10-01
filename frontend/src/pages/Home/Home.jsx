@@ -30,8 +30,8 @@ function HomePage() {
 
   return (
     <div>
-      <section className='Hero'>
-        <Banner imageUrl={ProfilPic} className='banner' intro="Bonjour, moi c'est Guillaume" title="Développeur Web" content="Bienvenue sur mon PortFolio,
+      <section className='hero'>
+        <Banner imageUrl={ProfilPic} className='bannerPic' intro="Bonjour, moi c'est Guillaume" title="Développeur Web" content="Bienvenue sur mon PortFolio,
         ici vous trouverez les projets que j'ai pu réaliser au cours de ce parcours de formation :
         html et css, javascript dynamique, gestion de projet, optimisation SEO d'un site, intégration frontend d'une app React jusqu'à intégration/gestion intégrale du Backend"></Banner>
       </section>

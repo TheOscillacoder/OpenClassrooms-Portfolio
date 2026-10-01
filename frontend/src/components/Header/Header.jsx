@@ -10,24 +10,19 @@ function HeaderMenu() {
             <Link to="/"><img src={ProfilPic} className="header__pic" alt="photo de profil de Guillaume Caro" /></Link>
             <ul className='header__nav'>
                 <li>
-                    <a href="/#presentation" className={
-                        ({ isActive }) => isActive ? "active" : ""}>PRESENTATION</a>
+                    <a href="/#presentation" className="header__link">PRESENTATION</a>
                 </li>
                 <li>
-                    <a href="/#competences" className={
-                        ({ isActive }) => isActive ? "active" : ""}>COMPETENCES</a>
+                    <a href="/#competences" className="header__link">COMPETENCES</a>
                 </li>
                 <li>
-                    <a href="/#projets" className={
-                        ({ isActive }) => isActive ? "active" : ""}>PROJETS</a>
+                    <a href="/#projets" className="header__link">PROJETS</a>
                 </li>
                 <li>
-                    <a href="/#parcours" className={
-                        ({ isActive }) => isActive ? "active" : ""}>PARCOURS</a>
+                    <a href="/#parcours" className="header__link">PARCOURS</a>
                 </li>
                 <li>
-                    <a href="/#contact" className={
-                        ({ isActive }) => isActive ? "active" : ""}>CONTACT</a>
+                    <a href="/#contact" className="header__link">CONTACT</a>
                 </li>
             </ul>
 

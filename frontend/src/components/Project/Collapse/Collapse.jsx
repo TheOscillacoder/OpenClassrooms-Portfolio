@@ -15,7 +15,6 @@ function Collapse({ text, content }) {
     // valeur par défaut ==> pas ouvert
 
     function handleClick() {
-        console.log('cliqué')
         setOpen(!Open)
 
     }

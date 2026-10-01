@@ -5,7 +5,7 @@
     display: inline-grid;
     justify-items: center;
 
-    h3 {
+    p {
     font-weight: 700;
     font-size: 18px;
     color: white;
@@ -19,11 +19,12 @@
     background-color: rgb(56, 223, 252);
     
     justify-content: space-between;
-    padding: 10px 20px 10px 10px;
+    padding: 10px;
     border-radius: 10px;
 }
 
 .collapse__content {
+    width: 90%;
     display: flex;
     padding: 20px;     
     flex-direction: column;
@@ -39,8 +40,8 @@
 @media screen and (max-width: 768px) {
     .collapse  {
         width: 100%;
-        h3 {
-            font-size: 13px;
+        p {
+            font-size: 14px;
         }       
     .collapse__item {
         height: 25px;

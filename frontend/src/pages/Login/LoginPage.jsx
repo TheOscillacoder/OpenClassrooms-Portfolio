@@ -6,7 +6,7 @@ import LoginForm from '../../components/Form/LoginForm/LoginForm.jsx'
 function LoginPage() {
     return (
         <section id="login" className='login'>
-            <h1 className="title">Log in</h1>
+            <h1 className="loginTitle">Log in</h1>
             <LoginForm></LoginForm>
         </section>
     )

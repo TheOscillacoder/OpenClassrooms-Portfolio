@@ -19,7 +19,7 @@ function Competences({ compTag, compAlt }) {
             {/* associe la compétence à son logo ou son texte si pas de logo */}
             {
                 logos ? <img src={compLogos[compTag]} alt={compAlt}></img>
-                    : <li className="TextCompItem">{compTag}</li>
+                    : <li className="textCompItem">{compTag}</li>
             }
         </article>
 

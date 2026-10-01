@@ -1,17 +1,14 @@
 @use "../../variables" as *;
 
     .compItem {
+    display: flex;
     height: 100px;
-    width: 100px;
-    align-content: center;
-    display: inline;
+    align-items: center;
+    justify-content: center;
     min-width: fit-content;
- 
-    border: none;
-    border-radius: 10px;
-    background-color: $blue;
+        @include blueTag;
 
-    .TextCompItem {
+    .textCompItem {
         list-style: none;
         font-size: 24px; 
         color: black;
@@ -28,17 +25,23 @@
 
 @media screen and (max-width: 768px) {
 
-    .compItem { 
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 10px;
-        
+    .compItem {         
     * {
         align-self: center;
-        font-size: 10px;
-        padding: 0px 10px 0px 10px; 
         width: fit-content;
-        height: 20px;
+        height: fit-content;
+        }
+
+        img {
+        font-weight: 800;
+        height: 50px;
+        width: 50px;
+        margin: 0px;
+        }
+
+        .textCompItem {
+            font-size: 18px;
+        }
         }
     }
-}
+

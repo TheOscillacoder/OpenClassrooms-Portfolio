@@ -45,19 +45,15 @@
  }
 
  .projetTags {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+        @extend %tagItemLayout;
     
-        li {
+        .tagItem {
         align-content: center;
         display: inline;
         min-width: fit-content;
  
         padding: 20px;
-        border: none;
-        border-radius: 10px;
-        background-color: $blue;
+        @include blueTag;
 
         font-weight: 700;
         font-size: 14px;
@@ -75,22 +71,16 @@
 
 @media screen and (max-width: 768px) {
 
-     .logementsCard  { 
-    // max-width: 335px;
-    // max-height: 255px;  
-
-    article {
-        width: 335px;
-        height: 255px;
-    }
-    
-    img {
-    width: 335px;
-    height: 255px;
+     .projetCard  { 
+    .card__gradient {
+        width: 100%;
+        border-radius: 0;
+        height: 250px;
+        
         }
-
-    h3 {
-        bottom: 60px;
+    .cardTitle {
+        font-size: 24px;
+        }
     }
-    }
- }  
+}
+ 
