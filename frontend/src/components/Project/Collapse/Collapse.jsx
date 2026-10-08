@@ -22,8 +22,8 @@ function Collapse({ text, content }) {
     return (
         <article className='collapse'>
             <div className='collapse__item'>
-                <p>{text}</p>
-                <img src={Arrow} className={!Open ? 'arrowDown' : ""} onClick={handleClick}></img>
+                <h4>{text}</h4>
+                <img src={Arrow} alt="icone flèche ouverture collapse" className={!Open ? 'arrowDown' : ""} onClick={handleClick}></img>
                 {/* lorsque valeur state est contraire à valeur par defaut (pas ouvert) on applique la rotation au chevron et le collapse n'est plus fermé                              */}
             </div>
             {Open && <div className='collapse__content'>{content}</div>}

@@ -3,13 +3,13 @@ import { useState, useEffect } from 'react'
 import Banner from '../../components/Banner/Banner.jsx'
 import SocialLinks from '../../components/SocialLinks/SocialLinks.jsx'
 import CompGroup from '../../components/Competences/CompGroup.jsx'
-import ContactForm from '../../components/Form/Form/Form.jsx'
+import ContactForm from '../../components/Form/Form.jsx'
 import CarrouselProjets from '../../components/Carroussel/Carrousel.jsx'
 import { compListe } from '../../data/competences.jsx'
 
 import './home.scss'
 
-import ProfilPic from '../../assets/photo_Guillaume_Caro_edited.jpg'
+import ProfilPic from '../../assets/photo_Guillaume_Caro.webp'
 import LinkedinLogo from '../../assets/square-linkedin-brands-solid-full.svg'
 import GitHubLogo from '../../assets/github-brands-solid-full.svg'
 
@@ -31,7 +31,7 @@ function HomePage() {
   return (
     <div>
       <section className='hero'>
-        <Banner imageUrl={ProfilPic} className='bannerPic' intro="Bonjour, moi c'est Guillaume" title="Développeur Web" content="Bienvenue sur mon PortFolio,
+        <Banner imageUrl={ProfilPic} alt="photo de profil de Guillaume Caro" className='bannerPic' intro="Bonjour, moi c'est Guillaume" title="Développeur Web" content="Bienvenue sur mon PortFolio,
         ici vous trouverez les projets que j'ai pu réaliser au cours de ce parcours de formation :
         html et css, javascript dynamique, gestion de projet, optimisation SEO d'un site, intégration frontend d'une app React jusqu'à intégration/gestion intégrale du Backend"></Banner>
       </section>

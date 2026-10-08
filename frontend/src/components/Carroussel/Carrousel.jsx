@@ -37,7 +37,7 @@ function CarrouselProjets({ projets }) {
                 <img src={CarrouselPrev} alt='logo Carrousel image précédente' onClick={PrevClick}></img>
                 <img src={CarrouselNext} alt='logo Carrousel image suivante' onClick={NextClick}></img>
             </div>
-            <p className='carrousel__position'>{`${projetIndex + 1} / ${projets.length}`}</p>
+            <span className='carrousel__position'>{`${projetIndex + 1} / ${projets.length}`}</span>
             <ProjetCard projet={selectProjet}></ProjetCard>
 
         </article>

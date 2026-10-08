@@ -6,22 +6,19 @@ Competences.propTypes = {
     competence: PropTypes.object,
 }
 
-function Competences({ compTag, compAlt }) {
+function Competences({ compTag, }) {
 
-    const logos = compLogos[compTag]
+    const logos = compLogos[compTag];
 
-    if (!logos) {
-        console.log(`Logo manquant pour la compétence : "${compTag}"`)
-    }
 
     return (
-        <article className='compItem'>
+        <li className='compItem'>
             {/* associe la compétence à son logo ou son texte si pas de logo */}
             {
-                logos ? <img src={compLogos[compTag]} alt={compAlt}></img>
-                    : <li className="textCompItem">{compTag}</li>
+                logos ? <img src={compLogos[compTag]} alt={compTag}></img>
+                    : <span className="textCompItem">{compTag}</span>
             }
-        </article>
+        </li>
 
     )
 }

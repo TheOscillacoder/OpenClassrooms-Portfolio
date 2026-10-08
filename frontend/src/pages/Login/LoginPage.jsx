@@ -1,5 +1,5 @@
 import './loginPage.scss'
-import LoginForm from '../../components/Form/LoginForm/LoginForm.jsx'
+import LoginForm from '../../components/Form/LoginForm.jsx'
 
 
 

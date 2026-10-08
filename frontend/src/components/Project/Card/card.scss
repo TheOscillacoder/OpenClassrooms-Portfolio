@@ -30,9 +30,10 @@
         }
         
         .cardPic   {
-        object-fit: cover;
         width: 100% ;
         height: 100%;
+        object-fit: cover;
+        object-position: top;
     }  
 }        
 
@@ -46,15 +47,16 @@
 
  .projetTags {
         @extend %tagItemLayout;
+        width: 90%;
+        
     
         .tagItem {
         align-content: center;
         display: inline;
         min-width: fit-content;
  
-        padding: 20px;
         @include blueTag;
-
+        color: black;
         font-weight: 700;
         font-size: 14px;
 
@@ -79,7 +81,7 @@
         
         }
     .cardTitle {
-        font-size: 24px;
+        font-size: 18px;
         }
     }
 }

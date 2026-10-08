@@ -5,10 +5,10 @@
     display: inline-grid;
     justify-items: center;
 
-    p {
+    h4 {
     font-weight: 700;
     font-size: 18px;
-    color: white;
+    margin: 0;
 }
     .collapse__item {
     display: flex;
@@ -16,7 +16,7 @@
     cursor: pointer;
     
     align-items: center;
-    background-color: rgb(56, 223, 252);
+    background-color: $ultramarine;
     
     justify-content: space-between;
     padding: 10px;

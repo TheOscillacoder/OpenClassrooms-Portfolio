@@ -7,11 +7,11 @@ Banner.propTypes = {
     className: PropTypes.string
 }
 
-function Banner({ imageUrl, className, content, title, intro }) {
+function Banner({ imageUrl, alt, className, content, title, intro }) {
     return (
         <div className='banner'>
             <div className='bannerPicDiv'>
-                <img src={imageUrl} alt='photo de profil de Guillaume Caro' className={className}></img>
+                <img src={imageUrl} alt={alt} className={className}></img>
             </div>
             <div className='banner__content'>
                 <p className='banner__intro'>{intro}</p>

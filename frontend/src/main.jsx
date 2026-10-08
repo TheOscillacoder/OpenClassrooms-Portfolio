@@ -1,13 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './main.scss'
-import App from './App.jsx'
 
+import App from './App.jsx'
 import HomePage from './pages/Home/Home.jsx'
 import ErrorPage from './pages/Error/Error.jsx'
 import LoginPage from './pages/Login/LoginPage.jsx'
 
+import './main.scss'
 
 const router = createBrowserRouter([
   {

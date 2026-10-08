@@ -1,4 +1,4 @@
-@use "../../../variables"  as *;
+@use "../../variables"  as *;
 
 
 
@@ -24,12 +24,18 @@
         width: 180px;
         text-align: center;
         border-radius: 60px;
-        background-color: $blue;
+        background-color: $cyan;
     }
     
     input, textarea {
         height: 50px;
         border: none;
         box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
-    }     
+        background-color: white;
+        
+    }    
+
+    ::placeholder {
+        opacity: 1;
+    }
 }

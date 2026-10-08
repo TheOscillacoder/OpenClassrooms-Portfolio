@@ -24,7 +24,7 @@ function ProjetCard({ projet }) {
   return (
     <article className='projetCard'>
       <div className='card__gradient'>
-        <img src={projet.cover} alt={projet.title} className='cardPic' />
+        <img src={projet.cover} alt={`logo de ${projet.title}`} className='cardPic' />
       </div>
       <h3 className='cardTitle'>{projet.title}</h3>
       <ul className='projetTags'>

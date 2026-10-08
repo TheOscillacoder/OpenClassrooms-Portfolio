@@ -12,7 +12,7 @@
     .carrousel__logo { 
     position: absolute;
     height: fit-content;
-    top: 300px;
+    top: 250px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 768px) {
     .carrousel .carrousel__logo {
-    top: 165px;
+    top: 150px;
     }
     .carrousel .carrousel__logo img {
         height : 50px;

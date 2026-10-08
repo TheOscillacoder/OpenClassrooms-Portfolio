@@ -16,7 +16,7 @@ function CompetencesGroup({ group }) {
             <ul className='compGroup'>
                 {/* mappe les données des compétences sur chaque item avec son logo */}
                 {group.skills.map((skill) =>
-                    <Competences key={skill} compTag={skill} alt={skill}></Competences>
+                    <Competences key={skill} compTag={skill}></Competences>
                 )}
             </ul>
         </article>
