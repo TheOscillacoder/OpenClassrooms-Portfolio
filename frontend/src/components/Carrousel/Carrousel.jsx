@@ -1,4 +1,4 @@
-import './Carrousel.scss'
+import './carrousel.scss'
 import PropTypes from 'prop-types'
 import { useState } from 'react'
 import CarrouselPrev from '../../assets/carrousel-previous-logo.svg'
