@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import Banner from '../../components/Banner/Banner.jsx'
 import SocialLinks from '../../components/SocialLinks/SocialLinks.jsx'
 import CompGroup from '../../components/Competences/CompGroup.jsx'
-import ContactForm from '../../components/Form/Form.jsx'
+import ContactForm from '../../components/Form/ContactForm.jsx'
 import CarrouselProjets from '../../components/Carroussel/Carrousel.jsx'
 import { compListe } from '../../data/competences.jsx'
 
