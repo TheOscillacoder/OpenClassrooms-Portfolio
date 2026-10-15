@@ -37,7 +37,7 @@ function HomePage() {
       </section>
       <section id='presentation' className='presentation'>
         <h2 className='title'>Présentation</h2>
-        <SocialLinks Url="www.linkedin.com/in/guillaume-caro-984336176" imageUrl={LinkedinLogo} alt='logo Linkedin' className='socialLogo'></SocialLinks>
+        <SocialLinks Url="https://www.linkedin.com/in/guillaume-caro-984336176" imageUrl={LinkedinLogo} alt='logo Linkedin' className='socialLogo'></SocialLinks>
         <SocialLinks Url="https://github.com/TheOscillacoder?tab=repositories" imageUrl={GitHubLogo} alt="logo github" className="socialLogo"></SocialLinks>
         <p className='presentation__text'>Issu d'une formation initiale audiovisuelle en tant qu'ingénieur du son,
           J'ai toujours voulu savoir coder et comment fonctionnent les sites internet
