@@ -14,4 +14,11 @@ React, Vite, SCSS, Web3Forms (formulaire de contact)
     npm install
     npm run dev
 
-Le formulaire de contact nécessite une clé Web3Forms (VITE_WEB3FORMS_KEY) à placer dans un fichier .env dans frontend/
+
+## Variables d'environnement :
+- formulaire de contact avec clé Web3Forms
+
+Créez un fichier `.env` dans `frontend/` :
+
+    VITE_WEB3FORMS_KEY=valeur-VITE_WEB3FORMS_KEY
+
